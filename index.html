@@ -1,118 +1,40 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en-US">
 
 <head>
-  <meta charset="utf-8">
-  <title>Script Tees</title>
-  <meta name="description" content="Script Tees">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
-	<link href="css/css.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A Digital Analog Clock</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <script src="script.js" defer></script>
 </head>
 
-<body id="core">
+<body>
+<main class="main">
+	
+    <div class="clockbox">
+        <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+            <g id="face">
+                <circle class="circle" cx="300" cy="300" r="253.9"/>
+                <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+            </g>
+            <g id="hour">
+                <path class="hour-arm" d="M300.5 298V142"/>
+                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+            </g>
+            <g id="minute">
+                <path class="minute-arm" d="M300.5 298V67"/>
+                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+            </g>
+            <g id="second">
+                <path class="second-arm" d="M300.5 350V55"/>
+                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+            </g>
+        </svg>
+    </div><!-- .clockbox -->
+</main>
 
-  <!-- Add your site or application content here -->
-  <div class="wrapper">
-		<header class="top-header">
-			<div class="top-banner">
-					<div id="logo">
-						<img src="images/20161225_122821.jpg" alt="company logo goes here" width="178" height="133">
-						<h1>Script Tees Catch Phrase</h1>
-						
-					</div>
-			</div>
-			<nav class="nav-bar">
-				<ul>
-					<li><a href="Home">Home</a></li>
-					<li><a href="men.html">Men</a></li>
-					<li><a href="women.html">Women</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="contactUs.html">Contact Us</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main class="clearfix">
-			<section class="featured-images clearfix">
-				<div class="container-featured">
-					<div class="featured">
-						<div id="pic1" class="featured-img"></div>
-							<h2>Pic1 Title</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nemo animi distinctio natus atque maxime sequi tempore et voluptas, quod.
-								</p>
-						
-					
-					</div>
-					<div class="featured">
-						<div id="pic2" class="featured-img"></div>
-							<h2>Pic2 Title</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nemo animi distinctio natus atque maxime sequi tempore et voluptas, quod.
-								</p>
-						
-					</div>
-				</div>
-				<div class="container-featured">
-					<div class="featured">
-						<div id="pic3" class="featured-img"></div>
-							<h2>Pic3 Title</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nemo animi distinctio natus atque maxime sequi tempore et voluptas, quod.
-								</p>
-						
-					
-					</div>
-					<div class="featured">
-						<div id="pic4" class="featured-img"></div>
-							<h2>Pic4 Title</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut nemo animi distinctio natus atque maxime sequi tempore et voluptas, quod.
-								</p>
-					</div>
-				</div>
-			</section>
-					<article class="topic-one clearfix">
-						<div id="topic-one-img" ></div>
-						<h3>Article Title</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ipsum nisi ad, magni voluptates ratione illum sit corporis delectus aperiam.</p>
-					
-					</article>
-					<article class="topic-two clearfix">
-						<div id="topic-two-img"></div>
-						<h3>Article Title</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ipsum nisi ad, magni voluptates ratione illum sit corporis delectus aperiam.</p>
-					
-					</article>
-		</main>
-		<footer class="footer">
-			<h3>Footer area</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur culpa repudiandae officiis magni praesentium molestias quibusdam dolores dolorem quo veritatis.</p>
-		</footer>
-	</div>
-	
-	
-	
-	
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
